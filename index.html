@@ -1,0 +1,50 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>MyCalculator</title><link rel="stylesheet" href="main.css"><link rel="icon" href="cal.png"></head>
+<body><div class="calculatorContainer"><div class="calculator">
+            <!--display the number-->
+            <div class="calculatorInputDisplay">
+                <textarea cols="40" rows="7" id="calculatorInputNumberPreviews"></textarea>
+                <input type="text" id="calculatorInputNumber">
+            </div>
+            <!--calculator button-->
+
+            <div class="calculatorButton">
+                <!--left button-->
+                <div class="calculatorButtonLeft">
+                    <div class="calculatorButtonLeftTop">
+                        <!--clear the input box-->
+                        <div class="calculatorButtonFixedSizeTop" id="CalculatorInputAC">AC</div>
+                        <div class="calculatorButtonFixedSizeTop" onclick="display('+/-')">+/-</div>
+                        <div class="calculatorButtonFixedSizeTop" onclick="display('%')">%</div>
+                    </div>
+
+                    <!--middle button number-->
+                    <div class="calculatorButtonLeftNumber">
+                        <div class="calculatorbuttonFixedsizeNumber" onclick="display('9')">9</div>
+                        <div class="calculatorbuttonFixedsizeNumber" onclick="display('8')">8</div>
+                        <div class="calculatorbuttonFixedsizeNumber" onclick="display('7')">7</div>
+
+                        <div class="calculatorbuttonFixedsizeNumber" onclick="display('6')">6</div>
+                        <div class="calculatorbuttonFixedsizeNumber" onclick="display('5')">5</div>
+                        <div class="calculatorbuttonFixedsizeNumber" onclick="display('4')">4</div>
+
+                        <div class="calculatorbuttonFixedsizeNumber" onclick="display('3')">3</div>
+                        <div class="calculatorbuttonFixedsizeNumber" onclick="display('2')">2</div>
+                        <div class="calculatorbuttonFixedsizeNumber" onclick="display('1')">1</div>
+                    </div>
+
+                    <!--bottom button left-->
+                    <div class="calculatorButtonLeftBottom">
+                        <div class="calculatorButtonFixedSizeroBottom" id="calculatorButtonFixedSizeroBottom" onclick="display('0')">0</div>
+                        <div class="calculatorButtonFixedSizeroBottom" onclick="display('.')">.</div>
+                    </div>
+                </div>
+                <!--right button -->
+                <div class="calculatorButtonRight">
+                    <div class="calculatorButtonFixedSizeRight1" onclick="display('/')">÷</div>
+                    <div class="calculatorButtonFixedSizeRight1" onclick="display('*')">×</div>
+                    <div class="calculatorButtonFixedSizeRight1" onclick="display('-')">-</div>
+                    <div class="calculatorButtonFixedSizeRight1" onclick="display('+')">+</div>
+                    <!--answer button-->
+                    <div class="calculatorButtonFixedSizeRight1" onclick="displaySolve()">=</div></div></div></div></div>
+ <!--javascript file link html file-->
+    <script src="Calculator.js"></script></body></html>
